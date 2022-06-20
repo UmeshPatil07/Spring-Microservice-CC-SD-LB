@@ -1,0 +1,15 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: OfficeMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefixes: config
+        default-context: application
+        profile-separator: '::'
+        format: yaml
